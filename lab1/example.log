@@ -1,0 +1,7 @@
+FlexPDE Version 6.36s/L64  11:46:23 Jan  8 2015
+(Times listed are wall-clock times, not charged CPU).
+
+START /home/allenyin/flexpde/BME511/example.pde  15:28:21 1/26/15
+Using 1 Thread(s)
+ +00:00:00| GRID 1 Nodes=105 Cells=40 RMS ERR= 9.09e-15 MAX ERR= 1.14e-14 MEM=1367
+ +00:00:00| --DONE-- 15:28:21 1/26/15
