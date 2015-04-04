@@ -58,7 +58,7 @@ BOUNDARIES
 		start(6, 6) point value(V) = 0	{ ground }
 		line to close
 
-    Region 3    { the scalp }
+    Region 4    { the scalp }
         layer 'LB1' sigma = sigma_sc
         layer 'LT1' sigma = sigma_sc
         start(R_sc, 0)
@@ -66,7 +66,7 @@ BOUNDARIES
         line to close
 
 
-    Limited Region 2 { the skull }
+    Limited Region 5 { the skull }
         layer 'LB2' sigma = sigma_sk
         layer 'LT2' sigma = sigma_sk
             { include region that's to be merged out }
@@ -75,7 +75,7 @@ BOUNDARIES
         arc(center=0, 0) angle=360
         line to close
 
-    Limited Region 3 { the brain }
+    Limited Region 6 { the brain }
         layer 'L3' sigma = sigma_br
         start(R_br, 0)
         arc(center=0, 0) angle=360
