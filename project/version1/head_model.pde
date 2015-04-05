@@ -39,26 +39,35 @@ BOUNDARIES
     
     surface 'ST1' natural(V) = 0
     surface 'SB1' natural(V) = 0
+	
+	Region 1
+		sigma = sigma_sc
+		start(R_sc, 0)
+		arc(center=0,0) angle=360
+		LINE TO CLOSE
 
-	Limited Region 1 { electrodes 1}
+	Limited Region 2 { electrodes 1}
+		sigma = sigma_sc
 		zt = R_sc
 		surface 'ST1'
  		start(0,0) point load(V) = 1 { Cz, 1mA }
 		line to close
 	
-	Limited Region 2 { electrodes 2 }
+	Limited Region 3 { electrodes 2 }
+		sigma = sigma_sc
 		zt = 6.44
 		surface 'ST1'
 		start(6.578, 0) point load(V) = -1 { Fz, -1mA }
 		line to close	
 
-	Limited Region 3 { arbitrary ground point as a test }
+	Limited Region 4 { arbitrary ground point as a test }
+		sigma = sigma_sc
 		zt = 6
 		surface 'ST1'
 		start(6, 6) point value(V) = 0	{ ground }
 		line to close
 
-    Region 4    { the scalp }
+    Region 5    { the scalp }
         layer 'LB1' sigma = sigma_sc
         layer 'LT1' sigma = sigma_sc
         start(R_sc, 0)
@@ -66,7 +75,7 @@ BOUNDARIES
         line to close
 
 
-    Limited Region 5 { the skull }
+    Limited Region 6 { the skull }
         layer 'LB2' sigma = sigma_sk
         layer 'LT2' sigma = sigma_sk
             { include region that's to be merged out }
@@ -75,7 +84,7 @@ BOUNDARIES
         arc(center=0, 0) angle=360
         line to close
 
-    Limited Region 6 { the brain }
+    Limited Region 7{ the brain }
         layer 'L3' sigma = sigma_br
         start(R_br, 0)
         arc(center=0, 0) angle=360
