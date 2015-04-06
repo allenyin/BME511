@@ -1,7 +1,0 @@
-FlexPDE Version 6.36/L64  14:20:57 Jul 29 2014
-(Times listed are wall-clock times, not charged CPU).
-
-START /home/asy13/3shell_head_model/head_model_3shells.pde  15:07:46 4/6/15
-Using 1 Thread(s)
- +00:00:08| GRID 1 Nodes=20279 Cells=13704 RMS ERR= 7.042e-4 MAX ERR= 0.001220 MEM=27416
- +00:00:10| --DONE-- 15:07:56 4/6/15
